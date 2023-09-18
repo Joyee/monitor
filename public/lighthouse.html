@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app"><button onclick="throwError()">Throw error</button></div>
+    <script src="../src/monitor/index.js"></script>
+    <script>
+      function throwError() {
+        const a = undefined
+        a.someProperty = 1
+      }
+    </script>
+  </body>
+</html>
